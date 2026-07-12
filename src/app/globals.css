@@ -25,6 +25,13 @@
 }
 
 @layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255 255 255 / .50) transparent;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background: var(--background);
     color: var(--foreground);
@@ -33,7 +40,7 @@
 
 @layer utilities {
   .container {
-    max-width: min(calc(100% - 2.5rem), 80rem);
+    max-width: min(calc(100% - 2.5rem), 43.063rem);
   }
   .border {
     border-width: 0.5px;
