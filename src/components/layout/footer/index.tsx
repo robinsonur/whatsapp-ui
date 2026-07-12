@@ -9,6 +9,7 @@ const items: ItemProps[] = [
   {
     iconName: "phone",
     label: "Calls",
+    amount: 3,
   },
   {
     iconName: "users",
@@ -18,6 +19,7 @@ const items: ItemProps[] = [
     iconName: "message-circle",
     label: "Chats",
     current: true,
+    amount: 363,
   },
   {
     iconName: "cog",
