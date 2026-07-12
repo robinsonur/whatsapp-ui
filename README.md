@@ -30,9 +30,9 @@ This is a static UI showcase. It does not include authentication, messaging, API
 
 ## Preview
 
-```md
-![WhatsApp iOS UI Preview](./public/preview.png)
-```
+<p align="center">
+  <img src="./public/preview.png" alt="WhatsApp iOS UI Preview" width="360" />
+</p>
 
 ## Tech Stack
 
