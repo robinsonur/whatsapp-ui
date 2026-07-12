@@ -36,6 +36,6 @@
     max-width: min(calc(100% - 2.5rem), 80rem);
   }
   .border {
-    border-width: 0.5px
+    border-width: 0.5px;
   }
 }

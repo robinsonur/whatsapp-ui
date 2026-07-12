@@ -29,9 +29,11 @@ const items: ItemProps[] = [
 
 function Footer() {
   return (
-    <footer className="fixed w-full bottom-0">
-      <Container className="mb-4 flex gap-x-4 justify-between backdrop-blur-2xs bg-secondary-muted/95 px-4 py-1 rounded-3xl">
-        {items.map(props => <Item key={props.iconName+props.label} {...props} />)}
+    <footer className="fixed bottom-0 w-full">
+      <Container className="mb-4 flex justify-between gap-x-4 rounded-3xl bg-secondary-muted/95 px-4 py-1 backdrop-blur-2xs">
+        {items.map((props) => (
+          <Item key={props.iconName + props.label} {...props} />
+        ))}
       </Container>
     </footer>
   );
