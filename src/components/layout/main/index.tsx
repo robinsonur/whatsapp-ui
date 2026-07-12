@@ -312,7 +312,7 @@ function Main() {
           />
         </section>
       </Container>
-      <Container className="space-x-2" asChild>
+      <Container className="scrollbar-none flex gap-x-2 overflow-x-auto whitespace-nowrap" asChild>
         <section>
           {filters.map((props) => (
             <Filter key={props.children as string} {...props} />
