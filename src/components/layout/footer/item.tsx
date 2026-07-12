@@ -13,12 +13,20 @@ function Item({ current, iconName, label, amount }: ItemProps) {
   return (
     <button
       type="button"
-      className={cn("relative justify-items-center px-7 rounded-full py-1.5", current && "bg-white/15")}
+      className={cn(
+        "relative justify-items-center px-7 rounded-full py-1.5 text-sm",
+        current && "bg-white/15",
+      )}
     >
-      <DynamicIcon name={iconName} className={cn("size-8", current && "fill-white")} />
-      <span className="text-sm">{label}</span>
+      <DynamicIcon
+        name={iconName}
+        className={cn("size-8", current && "fill-white")}
+      />
+      <span>{label}</span>
       <Activity mode={!!amount ? "visible" : "hidden"}>
-        <span className="absolute bg-primary px-1 top-0 rounded-full text-secondary">{amount}</span>
+        <span className="absolute top-0 right-0 grid h-6 min-w-6 place-items-center rounded-full bg-primary px-1 leading-none text-secondary">
+          {amount}
+        </span>
       </Activity>
     </button>
   );
