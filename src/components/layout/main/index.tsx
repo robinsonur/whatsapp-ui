@@ -4,16 +4,16 @@ import { Filter, type FilterProps } from "./filter";
 const filters: FilterProps[] = [
   {
     active: true,
-    label: "All",
+    children: "All",
   },
   {
-    label: "Unread 363",
+    children: "Unread 363",
   },
   {
-    label: "Favorites",
+    children: "Favorites",
   },
   {
-    label: "Groups 64",
+    children: "Groups 64",
   },
 ];
 
@@ -32,8 +32,9 @@ function Main() {
       <Container className="space-x-2" asChild>
         <section>
           {filters.map((props) => (
-            <Filter key={props.label} {...props} />
+            <Filter key={props.children as string} {...props} />
           ))}
+          <Filter className="text-white">+</Filter>
         </section>
       </Container>
     </main>
