@@ -21,7 +21,10 @@ function Item({ current, iconName, label, amount }: ItemProps) {
     >
       <DynamicIcon
         name={iconName}
-        className={cn("mx-auto size-[clamp(1.35rem,6vw,2rem)]", current && "fill-white")}
+        className={cn(
+          "mx-auto size-[clamp(1.35rem,6vw,2rem)]",
+          current && "fill-white",
+        )}
       />
       <span>{label}</span>
       <Activity mode={amount ? "visible" : "hidden"}>
