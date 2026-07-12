@@ -15,13 +15,13 @@ function Item({ current, iconName, label, amount }: ItemProps) {
     <button
       type="button"
       className={cn(
-        "relative justify-items-center rounded-full px-7 py-1.5 text-sm",
+        "relative min-w-0 justify-items-center rounded-full px-1 py-1.5 text-[clamp(0.625rem,2.7vw,0.875rem)]",
         current && "bg-white/15",
       )}
     >
       <DynamicIcon
         name={iconName}
-        className={cn("size-8", current && "fill-white")}
+        className={cn("size-[clamp(1.35rem,6vw,2rem)]", current && "fill-white")}
       />
       <span>{label}</span>
       <Activity mode={amount ? "visible" : "hidden"}>
