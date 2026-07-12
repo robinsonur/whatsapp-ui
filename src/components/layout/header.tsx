@@ -3,8 +3,8 @@ import { Container, IconButton } from "@/components/ui";
 
 function Header() {
   return (
-    <header className="sticky top-4 w-full">
-      <Container className="mt-4 flex gap-x-4">
+    <header className="sticky top-4 z-10 w-full">
+      <Container className="my-4 flex gap-x-4">
         <IconButton className="mr-auto">
           <EllipsisIcon />
         </IconButton>

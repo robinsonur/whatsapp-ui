@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #5abb6c;
+  --secondary: #0a0a0a;
+  --background: var(--secondary);
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -10,7 +12,6 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-  --color-secondary-muted: var(--secondary-muted);
   --blur-2xs: 2px;
 }
 
@@ -18,7 +19,6 @@
   :root {
     --primary: #5abb6c;
     --secondary: #0a0a0a;
-    --secondary-muted: #161616;
     --background: var(--secondary);
     --foreground: #ededed;
   }
