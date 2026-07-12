@@ -1,7 +1,7 @@
-import { IconButton, Counter } from "@/components/ui";
-import { cn } from "@/lib/utils";
 import { UsersIcon } from "lucide-react";
 import { Activity } from "react";
+import { Counter, IconButton } from "@/components/ui";
+import { cn } from "@/lib/utils";
 
 type ConversationProps = {
   title: string;

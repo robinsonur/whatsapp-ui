@@ -27,7 +27,7 @@
 @layer base {
   * {
     scrollbar-width: thin;
-    scrollbar-color: rgb(255 255 255 / .50) transparent;
+    scrollbar-color: rgb(255 255 255 / 0.5) transparent;
   }
   html {
     scroll-behavior: smooth;

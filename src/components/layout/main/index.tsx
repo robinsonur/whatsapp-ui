@@ -1,7 +1,6 @@
 import { Container } from "@/components/ui";
-import { Filter, type FilterProps } from "./filter";
 import { Conversation, type ConversationProps } from "./conversation";
-import { ArchiveIcon } from "lucide-react";
+import { Filter, type FilterProps } from "./filter";
 
 const filters: FilterProps[] = [
   {
@@ -324,7 +323,10 @@ function Main() {
       <Container asChild>
         <section>
           {conversations.map((props) => (
-            <Conversation key={props.title+props.summary+props.time} {...props} />
+            <Conversation
+              key={props.title + props.summary + props.time}
+              {...props}
+            />
           ))}
         </section>
       </Container>

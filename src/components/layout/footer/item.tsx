@@ -1,7 +1,7 @@
 import { DynamicIcon, type IconName } from "lucide-react/dynamic";
 import { Activity } from "react";
-import { cn } from "@/lib/utils";
 import { Counter } from "@/components/ui";
+import { cn } from "@/lib/utils";
 
 type ItemProps = {
   current?: boolean;
@@ -25,9 +25,7 @@ function Item({ current, iconName, label, amount }: ItemProps) {
       />
       <span>{label}</span>
       <Activity mode={amount ? "visible" : "hidden"}>
-        <Counter className="absolute top-0 right-0">
-          {amount}
-        </Counter>
+        <Counter className="absolute top-0 right-0">{amount}</Counter>
       </Activity>
     </button>
   );
